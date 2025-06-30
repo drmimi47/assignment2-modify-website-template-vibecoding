@@ -1,0 +1,27 @@
+/* This is a comment in CSS */
+/* Styling the body to center the content */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f0f8ff;
+  }
+  
+  /* Style for the heading */
+  h1 {
+    color: darkblue;
+  }
+  
+  /* Style for the button */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style for the paragraph text */
+  p {
+    font-style: italic;
+    color: darkgreen;
+  }
+  
