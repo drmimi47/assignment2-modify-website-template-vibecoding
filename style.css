@@ -1,27 +1,84 @@
 /* This is a comment in CSS */
 /* Styling the body to center the content */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-    background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-bottom: 4px solid #111;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+p {
+  font-style: italic;
+  color: darkgreen;
+}
+
+.matrix-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.text-box {
+  background: #fff;
+  border: 3px solid #111;
+  color: #111;
+  padding: 32px 20px;
+  border-radius: 0;
+  font-size: 1.1em;
+  font-family: 'Arial Black', Arial, sans-serif;
+  box-shadow: none;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.text-box:hover {
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .matrix-container {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  /* Style for the heading */
+}
+
+@media (max-width: 600px) {
+  .matrix-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
   h1 {
-    color: darkblue;
+    font-size: 1.5em;
   }
-  
-  /* Style for the button */
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Style for the paragraph text */
-  p {
-    font-style: italic;
-    color: darkgreen;
-  }
-  
+}
