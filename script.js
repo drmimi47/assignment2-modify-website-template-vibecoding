@@ -84,8 +84,8 @@ scene.add(mesh);
 
 // Animation loop
 function animate() {
-    // Increase the speed by multiplying time by 2 (was 0.001)
-    uniforms.time.value = performance.now() * 0.002;
+    // Double the speed again (was 0.002)
+    uniforms.time.value = performance.now() * 0.004;
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
 }
