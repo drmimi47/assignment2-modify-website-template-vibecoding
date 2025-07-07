@@ -1,21 +1,75 @@
-/* This is a comment in CSS */
-/* Styling the body to center the content */
+
+
+/* Top white banner styles */
+.top-banner {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  color: #222;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.0em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 18px 0 12px 0;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-bottom: 1.5px solid rgba(255,255,255,0.04);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Black secondary banner styles */
+.black-banner {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 12px 0 10px 0;
+  position: fixed;
+  top: 54px;
+  left: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+}
+
 body {
+  /* Add padding to prevent content from being hidden under the banners */
+  padding-top: 110px;
+  /* Main stylesheet for the simple website. Styles the body, headings, matrix container, rectangles, and includes responsive design. */
   margin: 0;
   padding: 0;
-  background: #fff;
+  /* Multi-point monochrome gradient background */
+  background: radial-gradient(circle at 20% 30%, #5f5f5f 0%, #f0f0f0 40%, #fafafa 80%, #414141 100%),
+              radial-gradient(circle at 50% 40%, #ededed 0%, #5b5b5b 30%, #f5f5f5 60%, #e0e0e0 100%),
+              radial-gradient(circle at 80% 70%, #cccccc 0%, #eaeaea 40%, #f5f5f5 80%, #555555 100%);
   color: #111;
-  font-family: 'Arial Black', Arial, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 18px;
   letter-spacing: 0.01em;
   text-align: center;
   margin-top: 50px;
 }
 
+
+/* Styles the main heading: center, size, weight, border, thin font */
 h1 {
   text-align: center;
   font-size: 2.5em;
-  font-weight: bold;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   margin-top: 40px;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -25,17 +79,20 @@ h1 {
 }
 
 button {
+  /* Styles for buttons (not used in current HTML) */
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
 
 p {
+  /* Styles for paragraphs (not used in current HTML) */
   font-style: italic;
   color: darkgreen;
 }
 
 .matrix-container {
+  /* Grid layout for rectangles: 3 columns, gap, max width, centered */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
@@ -44,36 +101,77 @@ p {
   padding: 40px 0;
 }
 
-.text-box {
-  background: #fff;
-  border: 3px solid #111;
-  color: #111;
-  padding: 32px 20px;
+/* Rectangle style for black boxes */
+/* Rectangle style for black boxes in portrait orientation */
+.rectangle {
+  /* Base style for rectangles: black, portrait, flex centering */
+  background: #111;
+  width: 120px;
+  height: 200px;
   border-radius: 0;
-  font-size: 1.1em;
-  font-family: 'Arial Black', Arial, sans-serif;
   box-shadow: none;
-  min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  transition: background 0.2s, color 0.2s;
+  margin: 0 auto;
 }
 
-.text-box:hover {
-  background: #111;
-  color: #fff;
-  cursor: pointer;
+/* Slightly varied sizes for each rectangle */
+.rectangle1 {
+  /* Slightly varied size for rectangle 1 */
+  width: 140px;
+  height: 210px;
+}
+.rectangle2 {
+  /* Slightly varied size for rectangle 2 */
+  width: 130px;
+  height: 190px;
+}
+.rectangle3 {
+  /* Slightly varied size for rectangle 3 */
+  width: 100px;
+  height: 205px;
+}
+.rectangle4 {
+  /* Slightly varied size for rectangle 4 */
+  width: 115px;
+  height: 195px;
+}
+.rectangle5 {
+  /* Slightly varied size for rectangle 5 */
+  width: 200px;
+  height: 200px;
+}
+.rectangle6 {
+  /* Slightly varied size for rectangle 6 */
+  width: 120px;
+  height: 220px;
+}
+.rectangle7 {
+  /* Slightly varied size for rectangle 7 */
+  width: 220px;
+  height: 185px;
+}
+.rectangle8 {
+  /* Slightly varied size for rectangle 8 */
+  width: 128px;
+  height: 200px;
+}
+.rectangle9 {
+  /* Slightly varied size for rectangle 9 */
+  width: 180px;
+  height: 200px;
 }
 
 @media (max-width: 900px) {
+  /* Responsive: 2 columns on medium screens */
   .matrix-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 600px) {
+  /* Responsive: 1 column and smaller gaps on small screens */
   .matrix-container {
     grid-template-columns: 1fr;
     gap: 20px;

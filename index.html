@@ -4,23 +4,39 @@
   <meta charset="UTF-8">
   <title>Simple Website</title>
 
-  <!-- Link to the external CSS file -->
+  <!-- Link to the external CSS file for styling -->
+  <!-- Google Fonts: Inter for thin, modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hello, welcome to my simple website!</h1>
 
-  <!-- Matrix of text boxes -->
+
+  <!-- Top white banner -->
+  <div class="top-banner">&lt;a webspace beyond the portfolio&gt;</div>
+
+  <!-- Black secondary banner -->
+  <div class="black-banner">THE BACKLOT</div>
+
+
+  <!-- Matrix container holds a 3x3 grid of rectangles with varied sizes -->
   <div class="matrix-container">
-    <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    <div class="text-box">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    <div class="text-box">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
-    <div class="text-box">Duis aute irure dolor in reprehenderit in voluptate velit esse.</div>
-    <div class="text-box">Excepteur sint occaecat cupidatat non proident.</div>
-    <div class="text-box">Sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <!-- Each rectangle is a div with a unique class for size variation -->
+    <div class="rectangle rectangle1"></div> <!-- Rectangle 1 -->
+    <div class="rectangle rectangle2"></div> <!-- Rectangle 2 -->
+    <div class="rectangle rectangle3"></div> <!-- Rectangle 3 -->
+    <div class="rectangle rectangle4"></div> <!-- Rectangle 4 -->
+    <div class="rectangle rectangle5"></div> <!-- Rectangle 5 -->
+    <div class="rectangle rectangle6"></div> <!-- Rectangle 6 -->
+    <div class="rectangle rectangle7"></div> <!-- Rectangle 7 -->
+    <div class="rectangle rectangle8"></div> <!-- Rectangle 8 -->
+    <div class="rectangle rectangle9"></div> <!-- Rectangle 9 -->
   </div>
 
+  <!-- Three.js library for animated background -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+  <!-- Custom script for animated background -->
   <script src="script.js"></script>
 </body>
 </html>
